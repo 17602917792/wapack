@@ -1,0 +1,27 @@
+@import "./base.less";
+body{
+  background-color: lighten(#000, 10%);   // 让黑色变亮 10%
+  color: darken(#fff, 10%);               // 让白色变暗 10%
+}
+.container{
+  background-color: aqua;
+  width: 220px;
+  height:220px;
+    p{
+      width: 20px;
+      height: 20px;
+      background-color:#ffffff;
+    }
+  span{
+    border: 1px solid red;
+  }  
+}
+.roundedCorners(@number:200px,@px:25px){
+  background-color: royalblue;
+  width:@number;
+  height:@number;
+  margin: @px auto;
+}
+.row{
+  .roundedCorners
+}
